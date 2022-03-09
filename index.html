@@ -89,11 +89,16 @@
           </div>
 
           <div class="col-md-5 text-center d-none d-md-block">
-            <img
-              class="img-fluid"
-              src="/assets/ebook-cover.png"
-              alt="intro img"
-            />
+            <span
+              class="tt"
+              data-bs-placement="bottom"
+              title="Net Ninja Book Cover"
+            >
+              <img
+                class="img-fluid"
+                src="/assets/ebook-cover.png"
+                alt="intro img"
+            /></span>
           </div>
         </div>
       </div>
@@ -467,6 +472,15 @@
                   id="email"
                   placeholder="e.g.email@example.com"
                 />
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Enter an email address we can reply to."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
 
               <label for="name" class="form-label">Name:</label>
@@ -480,6 +494,15 @@
                   id="name"
                   placeholder="e.g.Mario"
                 />
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Pretty self explantoty rely..."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
 
               <label for="subject" class="form-label">
@@ -521,5 +544,12 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
   </body>
 </html>
