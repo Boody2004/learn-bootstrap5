@@ -12,6 +12,11 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
     <title>LEARN BOOTSTRAP | 5</title>
 
     <style>
@@ -26,7 +31,10 @@
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
-          <span class="fw-bold text-secondary"> Logo Name </span>
+          <span class="fw-bold text-secondary">
+            <i class="bi bi-book-half"></i>
+            Logo Name
+          </span>
         </a>
         <button
           class="navbar-toggler"
@@ -345,8 +353,166 @@
     </section>
 
     <!-- reviews list -->
+    <section id="reiews" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2><i class="bi bi-stars"></i> Book Reviews</h2>
+          <p class="lead">What my student have add about the book...</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <p class="mb-1">
+                  Proident exercitation nisi mollit aute velit id ad. Mollit
+                  quis sunt culpa duis. Deserunt aliqua proident reprehenderit
+                  aute et amet sunt aliquip exercitation. Esse anim quis duis
+                  pariatur aliqua et labore do laboris cillum ex adipisicing. Ea
+                  aute id qui anim tempor velit anim pariatur ut id aliquip do.
+                </p>
+                <small>Review by Mario</small>
+              </div>
+
+              <div class="list-group-item py-3">
+                <div class="mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <p class="mb-1">
+                  Proident exercitation nisi mollit aute velit id ad. Mollit
+                  quis sunt culpa duis. Deserunt aliqua proident reprehenderit
+                  aute et amet sunt aliquip exercitation. Esse anim quis duis
+                  pariatur aliqua et labore do laboris cillum ex adipisicing. Ea
+                  aute id qui anim tempor velit anim pariatur ut id aliquip do.
+                </p>
+                <small>Review by Mario</small>
+              </div>
+
+              <div class="list-group-item py-3">
+                <div class="mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <p class="mb-1">
+                  Proident exercitation nisi mollit aute velit id ad. Mollit
+                  quis sunt culpa duis. Deserunt aliqua proident reprehenderit
+                  aute et amet sunt aliquip exercitation. Esse anim quis duis
+                  pariatur aliqua et labore do laboris cillum ex adipisicing. Ea
+                  aute id qui anim tempor velit anim pariatur ut id aliquip do.
+                </p>
+                <small>Review by Mario</small>
+              </div>
+
+              <div class="list-group-item py-3">
+                <div class="mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <p class="mb-1">
+                  Proident exercitation nisi mollit aute velit id ad. Mollit
+                  quis sunt culpa duis. Deserunt aliqua proident reprehenderit
+                  aute et amet sunt aliquip exercitation. Esse anim quis duis
+                  pariatur aliqua et labore do laboris cillum ex adipisicing. Ea
+                  aute id qui anim tempor velit anim pariatur ut id aliquip do.
+                </p>
+                <small>Review by Mario</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- contact from -->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Questions to ask? Fill out the from to contact me directly...
+          </p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <label for="email" class="form-label">Email address:</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope-fill"></i>
+                </span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g.email@example.com"
+                />
+              </div>
+
+              <label for="name" class="form-label">Name:</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="e.g.Mario"
+                />
+              </div>
+
+              <label for="subject" class="form-label">
+                What is your question about?
+              </label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>Pricing query</option>
+                  <option value="content">Content query</option>
+                  <option value="other">0ther query</option>
+                </select>
+              </div>
+
+              <div class="form-floating mb-4 mt-5">
+                <textarea
+                  id="query"
+                  class="form-control"
+                  style="height: 140px"
+                ></textarea>
+                <label for="query" class="form-label">Your query...</label>
+              </div>
+
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- get updates / mode trigger -->
 
